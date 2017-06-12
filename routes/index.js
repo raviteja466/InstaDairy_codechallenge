@@ -26,7 +26,7 @@ router.post("/register", function(req, res) {
             return res.render("register")
         }
             passport.authenticate("local")(req,res,function(){
-            req.flash("success", "welcome to InstaDairy " + user.username);
+            req.flash("success", "welcome to InstaDiary " + user.username);
             res.redirect("/instablogs");
         }) 
     })
