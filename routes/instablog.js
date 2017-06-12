@@ -3,7 +3,7 @@ var router = express.Router({mergeParams: true});
 var Instablog = require("../models/instablog")
 var middleware = require("../middleware")
 //INDEX - show all instablogs
-router.get("/", function(req, res){
+router.get("/",middleware.isLoggedIn, function(req, res){
     // Get all instablogs from DB
     Instablog.find({}, function(err, allInstablogs){
        if(err){
