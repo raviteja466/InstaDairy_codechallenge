@@ -14,8 +14,8 @@ var express     = require("express"),
 var commentRoutes   = require("./routes/comments"),
     instablogRoutes= require("./routes/instablog"),
     indexRoutes      = require("./routes/index")
-    
 
+// mongoose.connect(process.env.DATABASEURL)
 var url = process.env.DATABASEURL || "mongodb://teja:12345@ds121192.mlab.com:21192/instadiary"
 mongoose.connect(url);
 // mongodb://teja:12345@ds121192.mlab.com:21192/instadiary
