@@ -1,0 +1,5 @@
+.media-body, .media-left, .media-right {
+    display: table-cell;
+    vertical-align: top;
+
+}

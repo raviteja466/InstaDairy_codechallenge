@@ -1,0 +1,44 @@
+<% include ../partials/header %>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+      xmlns="http://www.w3.org/1999/html">
+    <link rel="stylesheet" href="/stylesheets/index.css">
+
+
+<div class="container">
+    <header class="jumbotron">
+        <div class="container">
+            <h1>Welcome to InstaDairy </h1>
+
+
+
+
+
+
+        </div>
+    </header>
+
+    <p>
+        <a class="btn btn-primary btn btn-large"href="/instablogs/new">Upload A New Pic</a>
+    </p>
+<div class="row text-center" style="display:flex; flex-wrap: wrap;">
+    <% instablogs.forEach(function(insta){ %>
+    <div class="col-md-3 col-sm-6">
+        <div class="thumbnail">
+            <img src="<%= insta.image %>" style="min-height:100px;height:200px;">
+    <div class="caption" style="text-align:center" >
+          <h4><%= insta.name %></h4>
+    </div>
+    <p>
+     <a href="/instablogs/<%=insta._id %>" class="btn btn-primary">More Info</a>
+    </p>
+    
+    </div>
+    </div>
+    <% }); %>
+</div>
+    </div>
+    
+
+<% include ../partials/footer %>
