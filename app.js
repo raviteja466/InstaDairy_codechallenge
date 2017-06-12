@@ -16,9 +16,9 @@ var commentRoutes   = require("./routes/comments"),
     indexRoutes      = require("./routes/index")
     
 
-var url = process.env.DATABASEURL || "mongodb://localhost/InstaDairy"
+var url = process.env.DATABASEURL || "mongodb://teja:12345@ds121192.mlab.com:21192/instadiary"
 mongoose.connect(url);
-
+// mongodb://teja:12345@ds121192.mlab.com:21192/instadiary
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
