@@ -16,9 +16,9 @@ var commentRoutes   = require("./routes/comments"),
     indexRoutes      = require("./routes/index")
 
 // mongoose.connect(process.env.DATABASEURL)
-var url = process.env.DATABASEURL || "mongodb://localhost/instadiary"
+var url = process.env.DATABASEURL || "mongodb://localhost/InstaDairy_Codechallenge"
 mongoose.connect(url);
-// mongodb://teja:12345@ds121192.mlab.com:21192/instadiary
+
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
@@ -50,6 +50,6 @@ app.use("/instablogs/:id/comments",commentRoutes);
 
 
 
-app.listen(3000, function(){
+app.listen(process.env.PORT, process.env.IP, function(){
    console.log("The InstaDairy Server Has Started!");
 });
