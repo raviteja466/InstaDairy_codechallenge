@@ -1,0 +1,74 @@
+.thumbnail img{
+    width: 100%;
+}
+
+.thumbnail {
+    padding: 0;
+}
+.img-responsive {display:block; width:auto; height: 100px; }
+
+.thumbnail .caption-full{
+    padding: 9px;
+}
+
+.btn btn-primary {
+    text-align: center;
+}
+
+#delete-form{
+    display: inline;
+}
+/***************************/
+
+/*body{*/
+    /*background-image: url(https://unsplash.com/search/photos/fog?photo=UpRoC4NCWPs.jpg);*/
+/*}*/
+.bg{
+    background-image: url(../images/6.jpg);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.navbar-inverse {
+    background-color: rgba(5, 25, 0, 0.1);
+    border-color: transparent;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    background-color: rgba(502, 23, 0, 0.1);
+    border-bottom: transparent;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    font-size: 12px;
+    font-weight: 800;
+    padding: 5px 0px;
+    letter-spacing: 2px;
+    margin: 10px 20px 10px 20px;
+    color: #FFF;
+}
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-brand:hover {
+    color: #fff;
+    font-weight: 900;
+    font-family: 'Oswald', sans-serif;
+}
+
+.blog{
+display: inline-flex;
+    /*float: inherit;*/
+}
+.caption {
+    text-align: center;
+}
+/*.blog1{*/
+    /*display: inline-flex;*/
+    /*display: inline-block;*/
+/*}*/
+.jumbotron {
+    background-image: url(../images/7.jpg);
+    background-size: cover;}
